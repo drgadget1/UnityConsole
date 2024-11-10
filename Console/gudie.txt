@@ -1,0 +1,28 @@
+﻿how to add command prefix
+1. create [prefix_name].cs file in Scripts/ConsoleCommands directory
+2. create CommandsByPrefix object in [prefix_name]_init class. CommandsByPrefix declaration located in CommandsUtil.Cs
+
+static class prefix_name_init
+    {
+        public static readonly CommandsByPrefix prefix_name_Commands = new CommandsByPrefix
+        (
+            new ConsoleCommand[]
+            {
+                new Cmd0(),
+                new Cmd1(),
+                new Cmd2(),
+                new Cmd3()
+                
+            },
+            "prefix_name",
+            "Example description that will be shown by calling 'help prefix_name' in console"
+        );
+    }
+   
+3. ConsoleCommand array in CommandsByPrefix object must be filled with commands that will be related 
+to [prefix_name] prefix. Commands must be created in [prefix_name].cs file
+4. Commands are inherited by ConsoleCommand class. ConsoleCommand declaration located in CommandsUtil.Cs
+
+5. to add all commands that are bound to prefix you must call AddCommandsByPref() method in ConsoleBehavior class, 
+passing CommandsByPrefix object in [prefix_name]_init class
+    

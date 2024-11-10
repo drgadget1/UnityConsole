@@ -1,0 +1,225 @@
+{
+    "name": "ConsoleInputs",
+    "maps": [
+        {
+            "name": "Enabler",
+            "id": "eddc9ba3-fc8b-4d29-879c-bf3f4f2b7417",
+            "actions": [
+                {
+                    "name": "EnableConsole",
+                    "type": "Button",
+                    "id": "971f86f1-b12d-4d88-b901-ec4ba5ba453a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Button With One Modifier",
+                    "id": "03793741-8fef-43b5-969f-66c1ed39d54e",
+                    "path": "ButtonWithOneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnableConsole",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Modifier",
+                    "id": "2f25433f-1786-41fb-93fd-cdc3a8466e38",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnableConsole",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Button",
+                    "id": "55b0ba35-a568-4436-8893-52b92fdef253",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnableConsole",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "History",
+            "id": "f96ec7a6-b12a-49b4-9477-daabdc863de7",
+            "actions": [
+                {
+                    "name": "HistoryForward",
+                    "type": "Button",
+                    "id": "038d4943-8d85-4291-8651-215716ab6ea4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HistoryBackward",
+                    "type": "Button",
+                    "id": "53f4df4c-78e5-4db6-897f-d86233ea092e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cef5521a-1896-4b87-b337-7fd70ebfde1e",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HistoryForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "862f900e-0564-45fb-a62c-39ffca475cdc",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "Hold(duration=0.15)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HistoryForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0381c79e-8edd-45fe-9d54-fbe4aa528e7c",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HistoryBackward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "493088fd-a80f-43d9-b49b-09e67da82b09",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "MultiTap(tapDelay=0.75)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HistoryBackward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "OtherGUI",
+            "id": "141ebd46-2e2c-4e81-b725-7b1ede2aa0cc",
+            "actions": [
+                {
+                    "name": "ResizeFromCenter",
+                    "type": "Button",
+                    "id": "6a775bf3-29e7-4397-9d7f-1fec305ee401",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e6d79da0-fb77-408c-81da-ff552c4a43eb",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResizeFromCenter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6206b439-7125-4772-a02c-04360261be63",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResizeFromCenter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ObjectPick",
+            "id": "725910a4-7ec1-4b54-be08-e79a0e5cb719",
+            "actions": [
+                {
+                    "name": "Mouse",
+                    "type": "Value",
+                    "id": "59ad1200-ac0e-40f0-8ef9-285c06d24d29",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "b85b260d-b2df-43ce-8526-7b304d2517cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e9523c42-9bdb-407e-857b-b642ee8a7160",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9088c5fe-f000-4018-abef-c683d3173571",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New control scheme1",
+            "bindingGroup": "New control scheme1",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
