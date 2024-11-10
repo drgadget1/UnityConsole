@@ -27,7 +27,7 @@ namespace Game.Meta.Console.Scripts
             "so",
             "Commands that about manipulations with some selected object. The key command is \""
             + "so_getsel\"" + Environment.NewLine +
-            "Object with Collision component are only available for selection.".BoldRT()
+            "Object with Collision component are only available for selection."
             
         );
         
